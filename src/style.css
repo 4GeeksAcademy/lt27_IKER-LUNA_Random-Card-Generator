@@ -1,1 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+  --bs-body-bg: #28a745;
+}

@@ -14,16 +14,55 @@
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <h1 class="mt-5">Random Card Generator</h1>
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <div class="card">
+            <div
+              class="card border-black mb-3 text-center;"
+              style="max-width: 18rem; height: 22rem;"
+            >
+              <div class="simbolo"><p class="h1">x</p></div>
+              <div id="cardValue"><p class="h1">x</p></div>
+              <div class="simbolo"><p class="h1">x</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="col"></div>
       </div>
     </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <button
+            type="button"
+            id="Button1"
+            class="btn btn-dark"
+            onclick="newCard()"
+          >
+            Click to generate a new card
+          </button>
+        </div>
+        <div class="col">
+          <div id="cronometro" class="contador-item">
+            <h4 class="cabecera-titulo">Tiempo</h4>
+            <div class="cabecera-num">
+              <span id="minutos">00</span>:<span id="segundos">00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-bottom p-4">
+      Made with ❤️ by
+      <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    </div>
+    <script src="app.js"></script>
+    <script src="contador.js"></script>
   </body>
 </html>
