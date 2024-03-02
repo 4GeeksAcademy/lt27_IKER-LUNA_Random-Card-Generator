@@ -2,4 +2,9 @@
 
 :root {
   --bs-body-bg: #28a745;
+  --bs-body-font-size: 1rem;
+}
+
+.rotate180 {
+  transform: rotate(180deg);
 }

@@ -16,27 +16,35 @@
     <div class="container-fluid text-center">
       <h1 class="mt-5">Random Card Generator</h1>
     </div>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col"></div>
-        <div class="col">
-          <div class="card">
+    <div
+      class="container position-relative align-middle row-gap-3 d-flex justify-content-center align-items-center"
+    >
+      <div class="paraCambiar " style="height: 400px; width: 300px">
+        <div class="row h-100">
+          <div class="col h-100">
             <div
-              class="card border-black mb-3 text-center;"
-              style="max-width: 18rem; height: 22rem;"
+              class="card position-relative h-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded "
             >
-              <div class="simbolo"><p class="h1">x</p></div>
-              <div id="cardValue"><p class="h1">x</p></div>
-              <div class="simbolo"><p class="h1">x</p></div>
+              <div class="h-25 position-relative">
+                <div class="fs-1 position-absolute top-0 start-0"><p>x</p></div>
+              </div>
+              <div class="h-50 position-relative">
+                <div id="cardValue"><p>x</p></div>
+              </div>
+              <div class="h-25 position-relative">
+                <div class="fs-1 position-absolute bottom-0 end-0 rotate180">
+                  <p>x</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col"></div>
       </div>
     </div>
-    <div class="container text-center">
+
+    <div class="container text-center row-gap-3" style="height: 100px;"></div>
+    <div class="container text-center row-gap-3">
       <div class="row">
-        <div class="col"></div>
         <div class="col">
           <button
             type="button"
@@ -55,6 +63,20 @@
             </div>
           </div>
         </div>
+        <div class="col">
+          <label for="ancho">Ancho</label>
+          <input type="number" id="ancho" placeholder="ingresar ancho" />
+          <label for="alto">Alto</label>
+          <input type="number" id="alto" placeholder="ingresar alto" />
+          <button
+            type="button"
+            id="Button2"
+            class="btn btn-secondary"
+            onclick="cam"
+          >
+            Cambiar dimensiones
+          </button>
+        </div>
       </div>
     </div>
 
@@ -63,6 +85,5 @@
       <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
     </div>
     <script src="app.js"></script>
-    <script src="contador.js"></script>
   </body>
 </html>
